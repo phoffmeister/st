@@ -51,10 +51,12 @@ install: st
 	@echo Please see the README file regarding the terminfo entry of st.
 	mkdir -p $(DESTDIR)$(PREFIX)/share/applications
 	cp -f st.desktop $(DESTDIR)$(PREFIX)/share/applications
+	xdg-icon-resource install --size 128 icon/st.png ugly-st
 
 uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/st
 	rm -f $(DESTDIR)$(MANPREFIX)/man1/st.1
 	rm -f $(DESTDIR)$(PREFIX)/share/applications/st.desktop
+	xdg-icon-resource uninstall --size 128 icon/st.png ugly-st
 
 .PHONY: all options clean dist install uninstall
