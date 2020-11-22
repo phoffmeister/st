@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Anonymous Pro:pixelsize=20:antialias=true:autohint=true";
+static char *font = "Hack:pixelsize=20:antialias=true:autohint=true";
 static int borderpx = 0;
 
 /*
@@ -94,7 +94,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.5;
+float alpha = 0.65;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
