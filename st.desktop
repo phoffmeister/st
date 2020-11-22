@@ -3,5 +3,5 @@ Type=Application
 Name=st
 Comment=simple-terminal emulator for X
 Icon=ugly-st
-Exec=st
+Exec=st -n st
 Categories=System;TerminalEmulator
